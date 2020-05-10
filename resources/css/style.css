@@ -1,29 +1,104 @@
 body{
     margin: 0;
+    box-sizing: border-box;
+}
+html{
     font-size: 16px;
 }
 .flex-container{
     display: flex;
+    padding: 0 1.5rem;
 }
 .mobile{
     display: none;
 }
-/* HEADER */
-header{
-    height: 64px;
-    border: 1px solid red;
+strong{
+    font-weight: bold;
 }
+
+/* HEADER */
 .logo{
     display: flex;
     align-items: center;
-    height: 32px;
     padding-left: 24px;
+    flex-grow: 1;
 }
-.desktop li{
-    display: inline-block;
+header{
+    padding: 1rem 1.5rem; 
+    border: 1px solid red;
+    font-size: 1.2rem;
+    
 }
-
-.desktop{
+header ul{
+    list-style-type: none;
+    text-align: right;
+    
+}
+header nav{
+    padding-right: 24px;
+    
+}
+header li{
+    display: inline;
+    padding-right: 1rem; 
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+header .desktop{
+    height: 2rem;
     display: flex;
     align-items: center;
+    border: 1px solid red;
+}
+
+@media only screen and (max-width:550px){
+    header .desktop{
+        display: none;
+    }
+    header .mobile{
+        display: block;
+        width: 100%;
+    }
+    header ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+/* BANNER*/
+#banner{
+    background-color: lightgray;
+    
+    
+}
+.main-content{
+    border: 1px solid red;
+    padding: 2rem 1.5rem 2rem 0;
+    width:60%
+}
+.main-content img{
+   max-width:100%;
+}
+.button{
+    background-color: gray;
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+    width:100%;
+    overflow: hidden;
+}
+.supportive-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid red;
+}
+.supportive-content h2{
+    color: gray:
+    font-size: 4rem;
+    font-weight: bold;
 }
