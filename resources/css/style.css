@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    font-size: 16px;
+}
+.flex-container{
+    display: flex;
+}
+.mobile{
+    display: none;
+}
+/* HEADER */
+header{
+    height: 64px;
+    border: 1px solid red;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    height: 32px;
+    padding-left: 24px;
+}
+.desktop li{
+    display: inline-block;
+}
+
+.desktop{
+    display: flex;
+    align-items: center;
+}
