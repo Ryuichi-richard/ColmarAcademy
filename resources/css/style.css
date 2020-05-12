@@ -131,19 +131,19 @@ header li{
   flex-direction: column;
   padding-bottom: 2rem;
   padding-top: 1rem;
-  border: 1px solid red;
+ 
 }
 .articles .others .card_pic{
   display: flex;
   flex-direction: row;
   align-items: center;
   width:100%;
-  border: 1px solid red;
+ 
 }
 .others .card_pic .pic{
   width: 35%;
   padding: 1rem;
-  border: 1px solid red;
+  
 }
 .others .card_pic .pic img{
   width: 100%;
@@ -163,7 +163,42 @@ header li{
   background-color:lightgray;
 }
 
-
+/* course */
+.course{
+  background-color: lightgray;
+}
+.course h2{
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 2rem;
+  font-weight: bold;
+}
+.course .course_content{
+  display: flex;
+  align-items: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  padding:  0 2.5rem;
+  
+}
+.course .course_box{
+  background-color: white;
+  width: 30%;
+  margin: 1rem;
+  
+}
+.course_box img{
+  height: auto;
+  width: 100%;
+}
+.course_box .course_desc{
+  padding:0 1rem;
+  padding-right: -10px;
+  
+}
+.course_box .course_desc h2{
+  
+}
 
 
  @media only screen and (max-width: 800px) {
