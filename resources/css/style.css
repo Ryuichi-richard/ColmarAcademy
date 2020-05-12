@@ -80,6 +80,7 @@ header li{
      background-color: lightgray;
      display: flex;
      align-items: center;
+     width: 100%;
  }
  .left {
     width: 60%;
@@ -91,6 +92,7 @@ header li{
     width: 40%;
     flex-grow: 1;
     flex-shrink: 1;
+    
   }
   #banner .pic img {
     width: 100%;
@@ -106,9 +108,58 @@ header li{
      background-color: black;
      padding: 0.5rem;
      text-align: center;
-     width:20rem;
-     
+     width:20rem; 
  }
+
+ /* Articles*/
+.articles{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.articles .left{
+  width: 60%;
+  flex-grow:1;
+  padding: 2rem 1.5rem;
+  border: 1px solid red;
+}
+.left .pic img{
+  width:100%;
+  height: auto;
+}
+.articles h2{
+  font-size: 2rem;
+  color:black;
+  font-weight: bold;
+}
+.article .right{
+  width: 40%;
+  flex-grow: 1;
+  border: 1px solid red;
+  padding: 2rem 0;
+}
+.articles .description{ 
+  display: flex;
+  flex-direction: column;
+}
+.description .card_description{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.description .card_description .pic{
+  width:35%;
+}
+.description .pic img{
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+
  @media only screen and (max-width: 800px) {
     header .desktop {
       display: none;
@@ -158,68 +209,5 @@ header li{
     }
   
     /* Articles */
-    .articles .featured {
-      display: none;
-    }
-  
-    .articles .others {
-      padding: 1rem 1rem 2rem 1rem;
-      width: 100%;
-    }
-  
-    .articles .others .white {
-      margin-bottom: 4rem;
-    }
-  
-    .articles .others .card_pic .pic {
-      width: 100%;
-    }
-  
-    .articles .others .card_pic .pic img {
-      width: 100%;
-    }
-  
-    /* Courses */
-    .courses {
-      margin-bottom: 1.5rem;
-    }
-  
-    .courses .up_row,
-    .courses .down_row {
-      display: flex;
-      flex-direction: column;
-    }
-  
-    .courses .course {
-      background-color: #d8d8d8;
-      padding: 1rem 1rem 1.5rem 1rem;
-      margin: 0 1rem 0.5rem 1rem;
-    }
-  
-    .course .pic {
-      display: none;
-    }
-  
-    .course .description h3,
-    .course .description p {
-      display: none;
-    }
-  
-    /* Thesis */
-    .thesis .others {
-      display: none;
-    }
-  
-    .thesis .featured {
-      width: 100%;
-    }
-  
-    .thesis .featured video {
-      width: 100%;
-    }
-  
-    .thesis .featured .description {
-      display: none;
-    }
-  
+   
   }
