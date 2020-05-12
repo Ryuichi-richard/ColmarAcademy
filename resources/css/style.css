@@ -111,17 +111,11 @@ header li{
      width:20rem; 
  }
 
- /* Articles*/
+ /* Article*/
 .articles{
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-}
-.articles .left{
-  width: 60%;
-  flex-grow:1;
-  padding: 2rem 1.5rem;
-  border: 1px solid red;
 }
 .left .pic img{
   width:100%;
@@ -132,30 +126,42 @@ header li{
   color:black;
   font-weight: bold;
 }
-.article .right{
-  width: 40%;
-  flex-grow: 1;
-  border: 1px solid red;
-  padding: 2rem 0;
-}
-.articles .description{ 
+.articles .others{ 
   display: flex;
   flex-direction: column;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+  border: 1px solid red;
 }
-.description .card_description{
+.articles .others .card_pic{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
+  width:100%;
+  border: 1px solid red;
 }
-.description .card_description .pic{
-  width:35%;
+.others .card_pic .pic{
+  width: 35%;
+  padding: 1rem;
+  border: 1px solid red;
 }
-.description .pic img{
+.others .card_pic .pic img{
   width: 100%;
   height: auto;
 }
-
+.articles .others .card_pic .description a {
+  color: #28BFB2;
+}
+.card_pic .description h2 {
+  line-height: normal;
+  margin: 0;
+}
+.white{
+  background-color: white;
+}
+.gray{
+  background-color:lightgray;
+}
 
 
 
