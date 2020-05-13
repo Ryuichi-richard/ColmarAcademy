@@ -31,24 +31,23 @@ header{
     position: fixed;
     z-index: 10;
     height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: white; 
 }
 header .mobile{
     display: none;
 }
 header .desktop{
-    height: 2rem;
+    display: flex;
+    align-items: center;
+    height: 4rem;
     font-size: 1.25rem;
     padding: 1rem 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; 
 }
-header .logo{
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
- 
+#logo{
+    
 }
 header nav{
     display: flex;
@@ -62,20 +61,6 @@ header li{
     margin-right: 1rem;
 }
 
-@media only screen and (max-width:500){
-     .desktop{
-        display: none;
-    }
-    nav {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin: 0 1.5rem;
-        width: 100%;
-        justify-content: space-between;
-      }
- }
-   
  /* BANNER */
  #banner{
      background-color: lightgray;
@@ -104,10 +89,12 @@ header li{
     justify-content: center;
   }
  
- #banner .button{
+ .button{
+     font-size: 1.2rem;
+     border-radius: 2px;
      color: white;
      background-color: black;
-     padding: 0.5rem;
+     padding: 1rem 0;
      text-align: center;
      width:20rem; 
  }
@@ -254,12 +241,30 @@ footer{
 footer ul{
   list-style-type: none;
   text-align: right;
-  flex-grow:1;
+  
 }
 .terms li{
   display: inline;
   margin-right: 1rem;
 }
 
-
+@media only screen and (max-width:500){
+ .desktop{
+     display: none;
+ }
+ .mobile nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 1.5rem;
+}
+#mobile nav{
+  height: 2rem;
+  margin-left:1.5rem;
+}
+#mobile img{
+  width:100%;
+}
+}
  
