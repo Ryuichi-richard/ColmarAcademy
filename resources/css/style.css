@@ -95,7 +95,8 @@ li {
   #banner .description {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+   
+    
   }
  
  .button{
@@ -128,6 +129,7 @@ li {
   flex-direction: column;
   padding-bottom: 2rem;
   padding-top: 1rem;
+  width: 100%;
  
 }
 .articles .others .card_pic{
@@ -208,7 +210,12 @@ li {
 /* thesis*/
 .thesis{
   display: flex;
-  
+}
+.thesis_content h2{
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 0;
 }
 .thesis .left video{
   width: 100%;
@@ -242,7 +249,7 @@ footer{
   align-items: center;
   border-top: 1px solid gray;
   justify-content: space-between;
-  background-color: gray;
+  background-color: white;
   position: relative;
   top: 4rem;
   padding: 1rem 1.5rem;
@@ -257,8 +264,8 @@ footer ul{
   margin-right: 1rem;
 }
 
-@media only screen and (max-width:500){
- .desktop{
+@media only screen and (max-width: 500px){
+ header .desktop{
      display: none;
  }
  .mobile{
@@ -271,6 +278,84 @@ header nav {
   margin: 0 1.5rem;
   width: 100%;
   justify-content: space-between;
+}
+
+/* BANNER MOBILE */
+#banner{
+  flex-direction: column;
+  padding-bottom: 2rem; 
+}
+#banner .pic{
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+#banner .pic img{
+  width: 100%;
+}
+#banner .others{
+   width: 100%;
+}
+.description{
+  padding: 0 1rem;
+  width: 100%;
+  line-height: 3rem;
+}
+.button{
+  width: 100%;
+}
+/* ARTICLE COURSE*/
+.articles .featured{
+  display: none;
+}
+.articles .others .card_pic{
+  width: 100%;
+  padding: 1rem;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+/* Course */
+.course img, .course .course_desc h5, 
+.course .course_desc p{
+  display: none;
+
+}
+.course .course_content{
+  flex-direction: column;
+  align-items: center;
+  margin:0;
+  position: relative
+}
+.course_content .course_box{
+  width: 100%;
+  margin-bottom: .5rem;
+}
+.course .course_box .course_desc{
+  padding: 1rem;
+}
+.course
+
+/*THESIS MOBILE*/
+.thesis{
+  flex-direction: column;
+}
+.thesis .others{
+  display: none;
+}
+.thesis .description{
+  display: none;
+}
+.thesis .featured{
+  width: 100%;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+.thesis .featured video{
+  width: 100%;
+}
+footer .terms{
+  display: none;
 }
 
 }
